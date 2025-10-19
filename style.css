@@ -21,6 +21,7 @@
   border-radius: 100px 100px 0 0;
   animation: float 2s infinite;
 }
+
 .ghost__eyes {
   display: flex;
   justify-content: space-around;
@@ -29,7 +30,9 @@
   width: 90px;
   height: 20px;
 }
-.ghost__eyes:before, .ghost__eyes:after {
+
+.ghost__eyes:before,
+.ghost__eyes:after {
   content: "";
   display: block;
   width: 15px;
@@ -37,6 +40,7 @@
   background: #00034b;
   border-radius: 50%;
 }
+
 .ghost__dimples {
   display: flex;
   justify-content: space-around;
@@ -45,7 +49,9 @@
   width: 130px;
   height: 20px;
 }
-.ghost__dimples:before, .ghost__dimples:after {
+
+.ghost__dimples:before,
+.ghost__dimples:after {
   content: "";
   display: block;
   width: 15px;
@@ -53,6 +59,7 @@
   background: #ffbeff;
   border-radius: 50%;
 }
+
 .ghost__feet {
   width: 100%;
   position: absolute;
@@ -60,12 +67,14 @@
   display: flex;
   justify-content: space-between;
 }
+
 .ghost__feet-foot {
   width: 25%;
   height: 26px;
   border-radius: 50%;
   background: #ffffff;
 }
+
 .ghost__feet-foot:last-child {
   background-image: linear-gradient(to right, #ffffff 55%, #dbdbdb 45%);
 }
@@ -80,17 +89,24 @@
 }
 
 @keyframes float {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-45px);
   }
 }
+
 @keyframes shadow {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: scale(1);
   }
+
   50% {
     transform: scale(0.9);
   }
@@ -113,6 +129,7 @@
   transition: all 0.3s ease;
   z-index: 1;
 }
+
 .tooltip:after {
   display: block;
   position: absolute;
